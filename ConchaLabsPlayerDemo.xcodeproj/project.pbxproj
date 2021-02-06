@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1025CDDDC30031121B /* AppDelegate.swift */; };
+		5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1225CDDDC30031121B /* SceneDelegate.swift */; };
+		5E758E1525CDDDC30031121B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1425CDDDC30031121B /* ViewController.swift */; };
+		5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E1925CDDDC80031121B /* Assets.xcassets */; };
+		5E758E1D25CDDDC80031121B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E1B25CDDDC80031121B /* LaunchScreen.storyboard */; };
+		5E758E2825CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E2725CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift */; };
+		5E758E3325CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E3225CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift */; };
+		5E758E5025CDE2BF0031121B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E4F25CDE2BF0031121B /* PlayerViewController.swift */; };
+		5E758E6325CDE3360031121B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E6225CDE3360031121B /* Constants.swift */; };
+		5E758E7325CDE6CF0031121B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E7225CDE6CF0031121B /* PlayerView.swift */; };
+		5E758E7925CDED5A0031121B /* CLSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E7825CDED590031121B /* CLSlider.swift */; };
+		5E758E7E25CDEF940031121B /* VolumeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E7D25CDEF940031121B /* VolumeControlView.swift */; };
+		5E758E8425CDF62B0031121B /* CLPlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E8325CDF62B0031121B /* CLPlayPauseButton.swift */; };
+		5E758E8C25CE04880031121B /* CLAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E8B25CE04880031121B /* CLAudioPlayer.swift */; };
+		5E758E9425CE07490031121B /* casioloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E9325CE07490031121B /* casioloop.wav */; };
+		5E758E9E25CE769F0031121B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E9D25CE769E0031121B /* LoginViewController.swift */; };
+		5E758EA325CE78270031121B /* CLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EA225CE78270031121B /* CLTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E758E2425CDDDC80031121B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E758E0525CDDDC30031121B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E758E0C25CDDDC30031121B;
+			remoteInfo = ConchaLabsPlayerDemo;
+		};
+		5E758E2F25CDDDC90031121B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E758E0525CDDDC30031121B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E758E0C25CDDDC30031121B;
+			remoteInfo = ConchaLabsPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConchaLabsPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E758E1025CDDDC30031121B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E758E1225CDDDC30031121B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5E758E1425CDDDC30031121B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E758E1925CDDDC80031121B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E758E1C25CDDDC80031121B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E758E1E25CDDDC80031121B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E758E2325CDDDC80031121B /* ConchaLabsPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConchaLabsPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E758E2725CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConchaLabsPlayerDemoTests.swift; sourceTree = "<group>"; };
+		5E758E2925CDDDC80031121B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E758E2E25CDDDC90031121B /* ConchaLabsPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConchaLabsPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E758E3225CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConchaLabsPlayerDemoUITests.swift; sourceTree = "<group>"; };
+		5E758E3425CDDDC90031121B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E758E4F25CDE2BF0031121B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		5E758E6225CDE3360031121B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E758E7225CDE6CF0031121B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		5E758E7825CDED590031121B /* CLSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSlider.swift; sourceTree = "<group>"; };
+		5E758E7D25CDEF940031121B /* VolumeControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlView.swift; sourceTree = "<group>"; };
+		5E758E8325CDF62B0031121B /* CLPlayPauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlayPauseButton.swift; sourceTree = "<group>"; };
+		5E758E8B25CE04880031121B /* CLAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAudioPlayer.swift; sourceTree = "<group>"; };
+		5E758E9325CE07490031121B /* casioloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = casioloop.wav; sourceTree = "<group>"; };
+		5E758E9D25CE769E0031121B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E758EA225CE78270031121B /* CLTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E758E0A25CDDDC30031121B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E758E2025CDDDC80031121B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E758E2B25CDDDC90031121B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E758E0425CDDDC30031121B = {
+			isa = PBXGroup;
+			children = (
+				5E758E0F25CDDDC30031121B /* ConchaLabsPlayerDemo */,
+				5E758E2625CDDDC80031121B /* ConchaLabsPlayerDemoTests */,
+				5E758E3125CDDDC90031121B /* ConchaLabsPlayerDemoUITests */,
+				5E758E0E25CDDDC30031121B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E758E0E25CDDDC30031121B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */,
+				5E758E2325CDDDC80031121B /* ConchaLabsPlayerDemoTests.xctest */,
+				5E758E2E25CDDDC90031121B /* ConchaLabsPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E758E0F25CDDDC30031121B /* ConchaLabsPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E9825CE07500031121B /* Sounds */,
+				5E758E6125CDE3270031121B /* Utilities */,
+				5E758E5525CDE2E50031121B /* Views */,
+				5E758E5425CDE2D30031121B /* Controllers */,
+				5E758E1025CDDDC30031121B /* AppDelegate.swift */,
+				5E758E1225CDDDC30031121B /* SceneDelegate.swift */,
+				5E758E1925CDDDC80031121B /* Assets.xcassets */,
+				5E758E1B25CDDDC80031121B /* LaunchScreen.storyboard */,
+				5E758E1E25CDDDC80031121B /* Info.plist */,
+			);
+			path = ConchaLabsPlayerDemo;
+			sourceTree = "<group>";
+		};
+		5E758E2625CDDDC80031121B /* ConchaLabsPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E2725CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift */,
+				5E758E2925CDDDC80031121B /* Info.plist */,
+			);
+			path = ConchaLabsPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		5E758E3125CDDDC90031121B /* ConchaLabsPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E3225CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift */,
+				5E758E3425CDDDC90031121B /* Info.plist */,
+			);
+			path = ConchaLabsPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		5E758E5425CDE2D30031121B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E1425CDDDC30031121B /* ViewController.swift */,
+				5E758E4F25CDE2BF0031121B /* PlayerViewController.swift */,
+				5E758E9D25CE769E0031121B /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E758E5525CDE2E50031121B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E758EA725CE782E0031121B /* TextFields */,
+				5E758E8225CDF6040031121B /* Buttons */,
+				5E758E7725CDED430031121B /* Sliders */,
+				5E758E7225CDE6CF0031121B /* PlayerView.swift */,
+				5E758E7D25CDEF940031121B /* VolumeControlView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E758E6125CDE3270031121B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E6225CDE3360031121B /* Constants.swift */,
+				5E758E8B25CE04880031121B /* CLAudioPlayer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5E758E7725CDED430031121B /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E7825CDED590031121B /* CLSlider.swift */,
+			);
+			path = Sliders;
+			sourceTree = "<group>";
+		};
+		5E758E8225CDF6040031121B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E8325CDF62B0031121B /* CLPlayPauseButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5E758E9825CE07500031121B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E9325CE07490031121B /* casioloop.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5E758EA725CE782E0031121B /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				5E758EA225CE78270031121B /* CLTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E758E0C25CDDDC30031121B /* ConchaLabsPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E758E3725CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemo" */;
+			buildPhases = (
+				5E758E0925CDDDC30031121B /* Sources */,
+				5E758E0A25CDDDC30031121B /* Frameworks */,
+				5E758E0B25CDDDC30031121B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConchaLabsPlayerDemo;
+			productName = ConchaLabsPlayerDemo;
+			productReference = 5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E758E2225CDDDC80031121B /* ConchaLabsPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E758E3A25CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemoTests" */;
+			buildPhases = (
+				5E758E1F25CDDDC80031121B /* Sources */,
+				5E758E2025CDDDC80031121B /* Frameworks */,
+				5E758E2125CDDDC80031121B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E758E2525CDDDC80031121B /* PBXTargetDependency */,
+			);
+			name = ConchaLabsPlayerDemoTests;
+			productName = ConchaLabsPlayerDemoTests;
+			productReference = 5E758E2325CDDDC80031121B /* ConchaLabsPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E758E2D25CDDDC90031121B /* ConchaLabsPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E758E3D25CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemoUITests" */;
+			buildPhases = (
+				5E758E2A25CDDDC90031121B /* Sources */,
+				5E758E2B25CDDDC90031121B /* Frameworks */,
+				5E758E2C25CDDDC90031121B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E758E3025CDDDC90031121B /* PBXTargetDependency */,
+			);
+			name = ConchaLabsPlayerDemoUITests;
+			productName = ConchaLabsPlayerDemoUITests;
+			productReference = 5E758E2E25CDDDC90031121B /* ConchaLabsPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E758E0525CDDDC30031121B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5E758E0C25CDDDC30031121B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5E758E2225CDDDC80031121B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5E758E0C25CDDDC30031121B;
+					};
+					5E758E2D25CDDDC90031121B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5E758E0C25CDDDC30031121B;
+					};
+				};
+			};
+			buildConfigurationList = 5E758E0825CDDDC30031121B /* Build configuration list for PBXProject "ConchaLabsPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E758E0425CDDDC30031121B;
+			productRefGroup = 5E758E0E25CDDDC30031121B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E758E0C25CDDDC30031121B /* ConchaLabsPlayerDemo */,
+				5E758E2225CDDDC80031121B /* ConchaLabsPlayerDemoTests */,
+				5E758E2D25CDDDC90031121B /* ConchaLabsPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E758E0B25CDDDC30031121B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E758E1D25CDDDC80031121B /* LaunchScreen.storyboard in Resources */,
+				5E758E9425CE07490031121B /* casioloop.wav in Resources */,
+				5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E758E2125CDDDC80031121B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E758E2C25CDDDC90031121B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E758E0925CDDDC30031121B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E758EA325CE78270031121B /* CLTextField.swift in Sources */,
+				5E758E7925CDED5A0031121B /* CLSlider.swift in Sources */,
+				5E758E6325CDE3360031121B /* Constants.swift in Sources */,
+				5E758E1525CDDDC30031121B /* ViewController.swift in Sources */,
+				5E758E5025CDE2BF0031121B /* PlayerViewController.swift in Sources */,
+				5E758E8425CDF62B0031121B /* CLPlayPauseButton.swift in Sources */,
+				5E758E7325CDE6CF0031121B /* PlayerView.swift in Sources */,
+				5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */,
+				5E758E8C25CE04880031121B /* CLAudioPlayer.swift in Sources */,
+				5E758E7E25CDEF940031121B /* VolumeControlView.swift in Sources */,
+				5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */,
+				5E758E9E25CE769F0031121B /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E758E1F25CDDDC80031121B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E758E2825CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E758E2A25CDDDC90031121B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E758E3325CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E758E2525CDDDC80031121B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E758E0C25CDDDC30031121B /* ConchaLabsPlayerDemo */;
+			targetProxy = 5E758E2425CDDDC80031121B /* PBXContainerItemProxy */;
+		};
+		5E758E3025CDDDC90031121B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E758E0C25CDDDC30031121B /* ConchaLabsPlayerDemo */;
+			targetProxy = 5E758E2F25CDDDC90031121B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E758E1B25CDDDC80031121B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E758E1C25CDDDC80031121B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E758E3525CDDDC90031121B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E758E3625CDDDC90031121B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E758E3825CDDDC90031121B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKBVW8P3C;
+				INFOPLIST_FILE = ConchaLabsPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quintana.ConchaLabsPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E758E3925CDDDC90031121B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKBVW8P3C;
+				INFOPLIST_FILE = ConchaLabsPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quintana.ConchaLabsPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E758E3B25CDDDC90031121B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKBVW8P3C;
+				INFOPLIST_FILE = ConchaLabsPlayerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quintana.ConchaLabsPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConchaLabsPlayerDemo.app/ConchaLabsPlayerDemo";
+			};
+			name = Debug;
+		};
+		5E758E3C25CDDDC90031121B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKBVW8P3C;
+				INFOPLIST_FILE = ConchaLabsPlayerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quintana.ConchaLabsPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConchaLabsPlayerDemo.app/ConchaLabsPlayerDemo";
+			};
+			name = Release;
+		};
+		5E758E3E25CDDDC90031121B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKBVW8P3C;
+				INFOPLIST_FILE = ConchaLabsPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quintana.ConchaLabsPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConchaLabsPlayerDemo;
+			};
+			name = Debug;
+		};
+		5E758E3F25CDDDC90031121B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKBVW8P3C;
+				INFOPLIST_FILE = ConchaLabsPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quintana.ConchaLabsPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConchaLabsPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E758E0825CDDDC30031121B /* Build configuration list for PBXProject "ConchaLabsPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E758E3525CDDDC90031121B /* Debug */,
+				5E758E3625CDDDC90031121B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E758E3725CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E758E3825CDDDC90031121B /* Debug */,
+				5E758E3925CDDDC90031121B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E758E3A25CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E758E3B25CDDDC90031121B /* Debug */,
+				5E758E3C25CDDDC90031121B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E758E3D25CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E758E3E25CDDDC90031121B /* Debug */,
+				5E758E3F25CDDDC90031121B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E758E0525CDDDC30031121B /* Project object */;
+}
