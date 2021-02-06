@@ -15,11 +15,15 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = Colors.cream
+        title = "CL Player"
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        
         audioPlayer = CLAudioPlayer()
         playerView.delegate = self
         configurePlayer()
     }
 
+    
     private func configurePlayer() {
         view.addSubview(playerView)
         playerView.translatesAutoresizingMaskIntoConstraints = false
