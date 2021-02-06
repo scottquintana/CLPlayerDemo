@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let rootViewController = PlayerViewController()
+        let rootViewController = LoginViewController() //PlayerViewController()
         
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()

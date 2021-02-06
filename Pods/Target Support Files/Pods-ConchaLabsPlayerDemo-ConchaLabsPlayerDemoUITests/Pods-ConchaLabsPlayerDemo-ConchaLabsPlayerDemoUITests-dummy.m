@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests
+@end

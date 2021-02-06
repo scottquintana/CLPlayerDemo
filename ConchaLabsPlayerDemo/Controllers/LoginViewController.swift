@@ -9,21 +9,36 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    let loginView = LoginView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        loginView.delegate = self
+        configureLoginView()
+    }
 
-        // Do any additional setup after loading the view.
+    private func configureLoginView() {
+        view.addSubview(loginView)
+        
+        loginView.layer.cornerRadius = 16
+        
+        NSLayoutConstraint.activate([
+            loginView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loginView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            loginView.widthAnchor.constraint(equalToConstant: (view.frame.width - 50)),
+            loginView.heightAnchor.constraint(equalToConstant: 200)
+        ])
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func signInUser(email: String, password: String) {
+       print("signing in")
     }
-    */
 
+}
+
+extension LoginViewController: LoginViewDelegate {
+    func didPressLogin(email: String, password: String) {
+        signInUser(email: email, password: password)
+    }
 }

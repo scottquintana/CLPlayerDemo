@@ -26,7 +26,6 @@ class CLTextField: UITextField {
     }
     
     private func configure(){
-       
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .white
         layer.borderColor = UIColor.black.cgColor

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57FD544DE29C62894A467B09 /* Pods_ConchaLabsPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */; };
 		5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1025CDDDC30031121B /* AppDelegate.swift */; };
 		5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1225CDDDC30031121B /* SceneDelegate.swift */; };
 		5E758E1525CDDDC30031121B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1425CDDDC30031121B /* ViewController.swift */; };
@@ -24,6 +25,11 @@
 		5E758E9425CE07490031121B /* casioloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E9325CE07490031121B /* casioloop.wav */; };
 		5E758E9E25CE769F0031121B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E9D25CE769E0031121B /* LoginViewController.swift */; };
 		5E758EA325CE78270031121B /* CLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EA225CE78270031121B /* CLTextField.swift */; };
+		5E758EAC25CE79380031121B /* CLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EAB25CE79380031121B /* CLButton.swift */; };
+		5E758EB125CE79B70031121B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EB025CE79B70031121B /* LoginView.swift */; };
+		5E758EB625CE7E220031121B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E758EB525CE7E220031121B /* GoogleService-Info.plist */; };
+		8F610E898684586DA198512B /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC04E54939BC5568D7E8DB /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework */; };
+		917A0D49B821ADCC924803B9 /* Pods_ConchaLabsPlayerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68475F507E56A8E6E6FCD96 /* Pods_ConchaLabsPlayerDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A93C51A36301A3F303A49CA /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConchaLabsPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E758E1025CDDDC30031121B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E758E1225CDDDC30031121B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +74,17 @@
 		5E758E9325CE07490031121B /* casioloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = casioloop.wav; sourceTree = "<group>"; };
 		5E758E9D25CE769E0031121B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E758EA225CE78270031121B /* CLTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTextField.swift; sourceTree = "<group>"; };
+		5E758EAB25CE79380031121B /* CLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLButton.swift; sourceTree = "<group>"; };
+		5E758EB025CE79B70031121B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5E758EB525CE7E220031121B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConchaLabsPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF81D4E47519EA08B838333 /* Pods-ConchaLabsPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemoTests/Pods-ConchaLabsPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9BC04E54939BC5568D7E8DB /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0180D207093F9E86C46713 /* Pods-ConchaLabsPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemo/Pods-ConchaLabsPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C68475F507E56A8E6E6FCD96 /* Pods_ConchaLabsPlayerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConchaLabsPlayerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58B9ED43678CDB34687D37E /* Pods-ConchaLabsPlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemoTests/Pods-ConchaLabsPlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E613AA1107DB18AEAD917C2A /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC127F4CFBC1C9E0A1F56A1A /* Pods-ConchaLabsPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemo/Pods-ConchaLabsPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FD544DE29C62894A467B09 /* Pods_ConchaLabsPlayerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917A0D49B821ADCC924803B9 /* Pods_ConchaLabsPlayerDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +108,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F610E898684586DA198512B /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9D5EDB51B758FCCDFBEF66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC127F4CFBC1C9E0A1F56A1A /* Pods-ConchaLabsPlayerDemo.debug.xcconfig */,
+				AC0180D207093F9E86C46713 /* Pods-ConchaLabsPlayerDemo.release.xcconfig */,
+				2A93C51A36301A3F303A49CA /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig */,
+				E613AA1107DB18AEAD917C2A /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.release.xcconfig */,
+				D58B9ED43678CDB34687D37E /* Pods-ConchaLabsPlayerDemoTests.debug.xcconfig */,
+				9DF81D4E47519EA08B838333 /* Pods-ConchaLabsPlayerDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D12FDD1DF5E8E79DCEA2647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */,
+				A9BC04E54939BC5568D7E8DB /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework */,
+				C68475F507E56A8E6E6FCD96 /* Pods_ConchaLabsPlayerDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E758E0425CDDDC30031121B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +146,8 @@
 				5E758E2625CDDDC80031121B /* ConchaLabsPlayerDemoTests */,
 				5E758E3125CDDDC90031121B /* ConchaLabsPlayerDemoUITests */,
 				5E758E0E25CDDDC30031121B /* Products */,
+				1C9D5EDB51B758FCCDFBEF66 /* Pods */,
+				4D12FDD1DF5E8E79DCEA2647 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +164,7 @@
 		5E758E0F25CDDDC30031121B /* ConchaLabsPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E758EB525CE7E220031121B /* GoogleService-Info.plist */,
 				5E758E9825CE07500031121B /* Sounds */,
 				5E758E6125CDE3270031121B /* Utilities */,
 				5E758E5525CDE2E50031121B /* Views */,
@@ -166,6 +214,7 @@
 				5E758E7725CDED430031121B /* Sliders */,
 				5E758E7225CDE6CF0031121B /* PlayerView.swift */,
 				5E758E7D25CDEF940031121B /* VolumeControlView.swift */,
+				5E758EB025CE79B70031121B /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				5E758E8325CDF62B0031121B /* CLPlayPauseButton.swift */,
+				5E758EAB25CE79380031121B /* CLButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -218,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E758E3725CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemo" */;
 			buildPhases = (
+				EC135A80CB87542DF67C5199 /* [CP] Check Pods Manifest.lock */,
 				5E758E0925CDDDC30031121B /* Sources */,
 				5E758E0A25CDDDC30031121B /* Frameworks */,
 				5E758E0B25CDDDC30031121B /* Resources */,
+				6C21FD0C8E16C71FE9F69B74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E758E3A25CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemoTests" */;
 			buildPhases = (
+				4CF556E0F8F3CB79F27651A2 /* [CP] Check Pods Manifest.lock */,
 				5E758E1F25CDDDC80031121B /* Sources */,
 				5E758E2025CDDDC80031121B /* Frameworks */,
 				5E758E2125CDDDC80031121B /* Resources */,
@@ -253,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E758E3D25CDDDC90031121B /* Build configuration list for PBXNativeTarget "ConchaLabsPlayerDemoUITests" */;
 			buildPhases = (
+				29C9FEB39908DD48921929C8 /* [CP] Check Pods Manifest.lock */,
 				5E758E2A25CDDDC90031121B /* Sources */,
 				5E758E2B25CDDDC90031121B /* Frameworks */,
 				5E758E2C25CDDDC90031121B /* Resources */,
+				77AFAA5F0FDA49AC480FD7EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E758E1D25CDDDC80031121B /* LaunchScreen.storyboard in Resources */,
+				5E758EB625CE7E220031121B /* GoogleService-Info.plist in Resources */,
 				5E758E9425CE07490031121B /* casioloop.wav in Resources */,
 				5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */,
 			);
@@ -336,6 +392,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29C9FEB39908DD48921929C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF556E0F8F3CB79F27651A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConchaLabsPlayerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C21FD0C8E16C71FE9F69B74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConchaLabsPlayerDemo/Pods-ConchaLabsPlayerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConchaLabsPlayerDemo/Pods-ConchaLabsPlayerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConchaLabsPlayerDemo/Pods-ConchaLabsPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77AFAA5F0FDA49AC480FD7EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC135A80CB87542DF67C5199 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConchaLabsPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E758E0925CDDDC30031121B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -344,10 +503,12 @@
 				5E758EA325CE78270031121B /* CLTextField.swift in Sources */,
 				5E758E7925CDED5A0031121B /* CLSlider.swift in Sources */,
 				5E758E6325CDE3360031121B /* Constants.swift in Sources */,
+				5E758EAC25CE79380031121B /* CLButton.swift in Sources */,
 				5E758E1525CDDDC30031121B /* ViewController.swift in Sources */,
 				5E758E5025CDE2BF0031121B /* PlayerViewController.swift in Sources */,
 				5E758E8425CDF62B0031121B /* CLPlayPauseButton.swift in Sources */,
 				5E758E7325CDE6CF0031121B /* PlayerView.swift in Sources */,
+				5E758EB125CE79B70031121B /* LoginView.swift in Sources */,
 				5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */,
 				5E758E8C25CE04880031121B /* CLAudioPlayer.swift in Sources */,
 				5E758E7E25CDEF940031121B /* VolumeControlView.swift in Sources */,
@@ -517,6 +678,7 @@
 		};
 		5E758E3825CDDDC90031121B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC127F4CFBC1C9E0A1F56A1A /* Pods-ConchaLabsPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -537,6 +699,7 @@
 		};
 		5E758E3925CDDDC90031121B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0180D207093F9E86C46713 /* Pods-ConchaLabsPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -557,6 +720,7 @@
 		};
 		5E758E3B25CDDDC90031121B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58B9ED43678CDB34687D37E /* Pods-ConchaLabsPlayerDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,6 +743,7 @@
 		};
 		5E758E3C25CDDDC90031121B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF81D4E47519EA08B838333 /* Pods-ConchaLabsPlayerDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -601,6 +766,7 @@
 		};
 		5E758E3E25CDDDC90031121B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A93C51A36301A3F303A49CA /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,6 +787,7 @@
 		};
 		5E758E3F25CDDDC90031121B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E613AA1107DB18AEAD917C2A /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
