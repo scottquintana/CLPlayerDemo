@@ -21,7 +21,7 @@ class VolumeControlView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         layoutUI()
     }
     
@@ -30,9 +30,9 @@ class VolumeControlView: UIView {
     }
     
     private func layoutUI() {
-        addSubview(lowSpeakerImage)
-        addSubview(highSpeakerImage)
-        addSubview(volumeSlider)
+        backgroundColor = .white
+        
+        addSubviews(lowSpeakerImage, highSpeakerImage, volumeSlider)
         
         lowSpeakerImage.translatesAutoresizingMaskIntoConstraints = false
         highSpeakerImage.translatesAutoresizingMaskIntoConstraints = false
@@ -42,9 +42,8 @@ class VolumeControlView: UIView {
         
         volumeSlider.addTarget(self, action: #selector(sliderChanged), for: .valueChanged)
         
-        backgroundColor = .white
-        
         let padding: CGFloat = 10
+        
         NSLayoutConstraint.activate([
             lowSpeakerImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
             lowSpeakerImage.widthAnchor.constraint(equalToConstant: 30),
@@ -62,6 +61,7 @@ class VolumeControlView: UIView {
             volumeSlider.heightAnchor.constraint(equalToConstant: 50)   
         ])
     }
+    
     
     @objc private func sliderChanged() {
         delegate?.didChangeVolume(to: volumeSlider.value)

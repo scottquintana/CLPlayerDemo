@@ -18,25 +18,29 @@ class PlayerView: UIView {
     let volumeControlView = VolumeControlView()
     weak var delegate: PlayerViewDelegate?
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        backgroundColor = .brown
+        
         volumeControlView.delegate = self
-        configureVolumeControl()
+        configure()
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configureVolumeControl() {
-        addSubview(playPauseButton)
-        addSubview(volumeControlView)
+    
+    private func configure() {
+        addSubviews(playPauseButton, volumeControlView)
+        
         playPauseButton.addTarget(self, action: #selector(playPauseTapped), for: .touchUpInside)
         volumeControlView.volumeSlider.value = defaults.object(forKey: "volume") as? Float ?? 0.5
         volumeControlView.translatesAutoresizingMaskIntoConstraints = false
         
         volumeControlView.layer.cornerRadius = (30)
+        
         let padding: CGFloat = 10
         
         NSLayoutConstraint.activate([
@@ -52,11 +56,14 @@ class PlayerView: UIView {
         ])
     }
     
+    
     @objc private func playPauseTapped() {
         delegate?.togglePlayPause()
         playPauseButton.isSelected.toggle()
     }
 }
+
+// MARK: - VolumeControlViewDelegate
 
 extension PlayerView: VolumeControlViewDelegate {
     func didChangeVolume(to volume: Float) {

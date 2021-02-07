@@ -9,7 +9,9 @@ import UIKit
 import GoogleSignIn
 
 class LoginViewController: UIViewController {
-
+    
+    let titleLabel = CLTitleLabel(textAlignment: .center, fontSize: 32, fontColor: .black)
+    let bodyLabel = CLBodyLabel(textAlignment: .center, fontSize: 16, fontColor: .black)
     let signInButton = GIDSignInButton()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,15 +36,31 @@ class LoginViewController: UIViewController {
 
     private func configureLoginView() {
         view.addSubview(signInButton)
+        view.addSubview(titleLabel)
+        view.addSubview(bodyLabel)
+        
+        titleLabel.text = "Welcome!"
+        bodyLabel.text = "Please sign in below using your Google account."
+        
+        let padding: CGFloat = 10
+        let spacing: CGFloat = 30
         signInButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
+            titleLabel.heightAnchor.constraint(equalToConstant: 36),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            titleLabel.bottomAnchor.constraint(equalTo: bodyLabel.topAnchor, constant: -spacing),
+            
+            bodyLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            bodyLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            bodyLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            bodyLabel.heightAnchor.constraint(equalToConstant: 20),
+            
             signInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            signInButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            signInButton.topAnchor.constraint(equalTo: bodyLabel.bottomAnchor, constant: spacing),
         ])
     }
-    
-
 }
 
 // MARK: - Google Login Extension
@@ -54,7 +72,7 @@ extension LoginViewController: GIDSignInDelegate {
           return
         }
         
-        let playerViewController = PlayerViewController()
+        let playerViewController = PlayerViewController(audioPlayer: CLAudioPlayer(), user: user.profile.givenName)
         navigationController?.pushViewController(playerViewController, animated: true)
     }
 }

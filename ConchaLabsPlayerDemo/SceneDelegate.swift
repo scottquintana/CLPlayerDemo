@@ -22,7 +22,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let rootViewController = LoginViewController()
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : Colors.darkGrey]
+        let attributes = [
+            NSAttributedString.Key.font: UIFont(name: Fonts.nunitoSans, size: 22)!,
+            NSAttributedString.Key.foregroundColor: Colors.darkGrey
+            ]
+        UINavigationBar.appearance().titleTextAttributes = attributes
         window?.makeKeyAndVisible()
     }
 

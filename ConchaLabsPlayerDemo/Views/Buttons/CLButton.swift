@@ -40,7 +40,7 @@ class CLButton: UIButton {
         translatesAutoresizingMaskIntoConstraints = false
         layer.cornerRadius = 16
         setTitleColor(.black, for: .normal)
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .title3)
+        titleLabel?.font = UIFont(name: Fonts.nunitoSans, size: 12)
     }
     
     func set(backgroundColor: UIColor, title: String) {

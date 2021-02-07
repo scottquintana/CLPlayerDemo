@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		57FD544DE29C62894A467B09 /* Pods_ConchaLabsPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */; };
+		5E5305F925CF409600AD4C88 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5305F725CF409600AD4C88 /* Merriweather-Regular.ttf */; };
+		5E5305FA25CF409600AD4C88 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */; };
 		5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1025CDDDC30031121B /* AppDelegate.swift */; };
 		5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1225CDDDC30031121B /* SceneDelegate.swift */; };
 		5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E1925CDDDC80031121B /* Assets.xcassets */; };
@@ -25,8 +27,10 @@
 		5E758E9E25CE769F0031121B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E9D25CE769E0031121B /* LoginViewController.swift */; };
 		5E758EA325CE78270031121B /* CLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EA225CE78270031121B /* CLTextField.swift */; };
 		5E758EAC25CE79380031121B /* CLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EAB25CE79380031121B /* CLButton.swift */; };
-		5E758EB125CE79B70031121B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EB025CE79B70031121B /* LoginView.swift */; };
 		5E758EB625CE7E220031121B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E758EB525CE7E220031121B /* GoogleService-Info.plist */; };
+		5EA4F4B425CF44E4004F8038 /* CLTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4B325CF44E4004F8038 /* CLTitleLabel.swift */; };
+		5EA4F4BC25CF4967004F8038 /* CLBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4BB25CF4967004F8038 /* CLBodyLabel.swift */; };
+		5EA4F4C225CF5000004F8038 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4C125CF5000004F8038 /* UIView+Ext.swift */; };
 		8F610E898684586DA198512B /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC04E54939BC5568D7E8DB /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework */; };
 		917A0D49B821ADCC924803B9 /* Pods_ConchaLabsPlayerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68475F507E56A8E6E6FCD96 /* Pods_ConchaLabsPlayerDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		2A93C51A36301A3F303A49CA /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E5305F725CF409600AD4C88 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConchaLabsPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E758E1025CDDDC30031121B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E758E1225CDDDC30031121B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +79,10 @@
 		5E758E9D25CE769E0031121B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E758EA225CE78270031121B /* CLTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTextField.swift; sourceTree = "<group>"; };
 		5E758EAB25CE79380031121B /* CLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLButton.swift; sourceTree = "<group>"; };
-		5E758EB025CE79B70031121B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5E758EB525CE7E220031121B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EA4F4B325CF44E4004F8038 /* CLTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTitleLabel.swift; sourceTree = "<group>"; };
+		5EA4F4BB25CF4967004F8038 /* CLBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLBodyLabel.swift; sourceTree = "<group>"; };
+		5EA4F4C125CF5000004F8038 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConchaLabsPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF81D4E47519EA08B838333 /* Pods-ConchaLabsPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemoTests/Pods-ConchaLabsPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9BC04E54939BC5568D7E8DB /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +144,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E5305F625CF407B00AD4C88 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5E5305F725CF409600AD4C88 /* Merriweather-Regular.ttf */,
+				5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		5E758E0425CDDDC30031121B = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +178,8 @@
 		5E758E0F25CDDDC30031121B /* ConchaLabsPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5EA4F4C025CF4FF1004F8038 /* Extensions */,
+				5E5305F625CF407B00AD4C88 /* Fonts */,
 				5E758EB525CE7E220031121B /* GoogleService-Info.plist */,
 				5E758E9825CE07500031121B /* Sounds */,
 				5E758E6125CDE3270031121B /* Utilities */,
@@ -205,12 +224,12 @@
 		5E758E5525CDE2E50031121B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5EA4F4B225CF44CA004F8038 /* Labels */,
 				5E758EA725CE782E0031121B /* TextFields */,
 				5E758E8225CDF6040031121B /* Buttons */,
 				5E758E7725CDED430031121B /* Sliders */,
 				5E758E7225CDE6CF0031121B /* PlayerView.swift */,
 				5E758E7D25CDEF940031121B /* VolumeControlView.swift */,
-				5E758EB025CE79B70031121B /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +274,23 @@
 				5E758EA225CE78270031121B /* CLTextField.swift */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		5EA4F4B225CF44CA004F8038 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				5EA4F4B325CF44E4004F8038 /* CLTitleLabel.swift */,
+				5EA4F4BB25CF4967004F8038 /* CLBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		5EA4F4C025CF4FF1004F8038 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EA4F4C125CF5000004F8038 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,9 +404,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E758E1D25CDDDC80031121B /* LaunchScreen.storyboard in Resources */,
+				5E5305FA25CF409600AD4C88 /* NunitoSans-Regular.ttf in Resources */,
 				5E758EB625CE7E220031121B /* GoogleService-Info.plist in Resources */,
 				5E758E9425CE07490031121B /* casioloop.wav in Resources */,
 				5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */,
+				5E5305F925CF409600AD4C88 /* Merriweather-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,17 +572,19 @@
 			files = (
 				5E758EA325CE78270031121B /* CLTextField.swift in Sources */,
 				5E758E7925CDED5A0031121B /* CLSlider.swift in Sources */,
+				5EA4F4C225CF5000004F8038 /* UIView+Ext.swift in Sources */,
+				5EA4F4B425CF44E4004F8038 /* CLTitleLabel.swift in Sources */,
 				5E758E6325CDE3360031121B /* Constants.swift in Sources */,
 				5E758EAC25CE79380031121B /* CLButton.swift in Sources */,
 				5E758E5025CDE2BF0031121B /* PlayerViewController.swift in Sources */,
 				5E758E8425CDF62B0031121B /* CLPlayPauseButton.swift in Sources */,
 				5E758E7325CDE6CF0031121B /* PlayerView.swift in Sources */,
-				5E758EB125CE79B70031121B /* LoginView.swift in Sources */,
 				5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */,
 				5E758E8C25CE04880031121B /* CLAudioPlayer.swift in Sources */,
 				5E758E7E25CDEF940031121B /* VolumeControlView.swift in Sources */,
 				5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */,
 				5E758E9E25CE769F0031121B /* LoginViewController.swift in Sources */,
+				5EA4F4BC25CF4967004F8038 /* CLBodyLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

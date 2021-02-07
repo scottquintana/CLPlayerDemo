@@ -20,3 +20,8 @@ enum SFSymbols {
     static let speakerLow = UIImage(systemName: "speaker.wave.1.fill")
     static let speakerHigh = UIImage(systemName: "speaker.wave.3.fill")
 }
+
+enum Fonts {
+    static let merriweather = "Merriweather-Regular"
+    static let nunitoSans = "NunitoSans-Regular"
+}
