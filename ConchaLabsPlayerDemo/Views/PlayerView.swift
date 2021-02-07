@@ -36,10 +36,13 @@ class PlayerView: UIView {
         addSubviews(playPauseButton, volumeControlView)
         
         playPauseButton.addTarget(self, action: #selector(playPauseTapped), for: .touchUpInside)
-        volumeControlView.volumeSlider.value = defaults.object(forKey: "volume") as? Float ?? 0.5
-        volumeControlView.translatesAutoresizingMaskIntoConstraints = false
         
-        volumeControlView.layer.cornerRadius = (30)
+        let volume = defaults.object(forKey: "volume") as? Float ?? 0.5
+        
+        volumeControlView.volumeSlider.value = volume
+        volumeControlView.setSpeakerImage(volume)
+        volumeControlView.translatesAutoresizingMaskIntoConstraints = false
+        volumeControlView.layer.cornerRadius = 25
         
         let padding: CGFloat = 10
         
@@ -52,7 +55,7 @@ class PlayerView: UIView {
             volumeControlView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -padding),
             volumeControlView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
             volumeControlView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
-            volumeControlView.heightAnchor.constraint(equalToConstant: 60)
+            volumeControlView.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     

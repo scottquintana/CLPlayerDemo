@@ -25,8 +25,6 @@ class CLTitleLabel: UILabel {
         font = UIFont(name: Fonts.merriweather, size: fontSize)
         textColor = fontColor
         self.textAlignment = textAlignment
-        
-        
     }
     
     
@@ -36,5 +34,4 @@ class CLTitleLabel: UILabel {
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.75
     }
-
 }

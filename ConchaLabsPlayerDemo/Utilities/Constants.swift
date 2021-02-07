@@ -15,9 +15,11 @@ enum Colors {
 }
 
 enum SFSymbols {
-    static let play = UIImage(systemName: "play.fill")
-    static let pause = UIImage(systemName: "pause.fill")
+    static let play = UIImage(systemName: "play.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .bold, scale: .large))
+    static let pause = UIImage(systemName: "pause.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .bold, scale: .large))
+    static let speakerOff = UIImage(systemName: "speaker.slash.fill")
     static let speakerLow = UIImage(systemName: "speaker.wave.1.fill")
+    static let speakerMed = UIImage(systemName: "speaker.wave.2.fill")
     static let speakerHigh = UIImage(systemName: "speaker.wave.3.fill")
 }
 

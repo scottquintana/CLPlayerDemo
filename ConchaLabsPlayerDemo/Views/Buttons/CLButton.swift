@@ -8,15 +8,6 @@
 import UIKit
 
 class CLButton: UIButton {
-    override var isEnabled: Bool {
-            didSet {
-                if self.isEnabled {
-                    self.alpha = 1
-                } else {
-                    self.alpha = 0.4
-                }
-            }
-        }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,10 +29,11 @@ class CLButton: UIButton {
     
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
-        layer.cornerRadius = 16
+        layer.cornerRadius = 20
         setTitleColor(.black, for: .normal)
         titleLabel?.font = UIFont(name: Fonts.nunitoSans, size: 12)
     }
+    
     
     func set(backgroundColor: UIColor, title: String) {
         setTitle(title, for: .normal)

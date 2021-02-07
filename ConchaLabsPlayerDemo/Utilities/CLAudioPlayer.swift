@@ -9,6 +9,7 @@ import Foundation
 import AVFoundation
 
 protocol AudioPlayer {
+    var isPlaying: Bool { get }
     func playPause()
     func setVolume(_ level: Float)
 }
@@ -16,12 +17,13 @@ protocol AudioPlayer {
 class CLAudioPlayer: AudioPlayer {
     
     let defaults = UserDefaults.standard
+    private var audioSessionObserver: Any!
     
     private var engine = AVAudioEngine()
     private var mainMixer: AVAudioMixerNode!
     private var player = AVAudioPlayerNode()
     private var audioFormat: AVAudioFormat!
-    var audioSessionObserver: Any!
+    
     
     private var audioFrameCount: UInt32!
     private var audioFileBuffer: AVAudioPCMBuffer!
@@ -40,6 +42,7 @@ class CLAudioPlayer: AudioPlayer {
         }
     }
     
+    
     private var audioFileURL: URL? {
         didSet {
             if let audioFileURL = audioFileURL {
@@ -57,7 +60,6 @@ class CLAudioPlayer: AudioPlayer {
     init() {
         observer()
         configurePlayer()
-        configureAudioSession()
         scheduleAudioFile()
     }
     
@@ -68,8 +70,6 @@ class CLAudioPlayer: AudioPlayer {
         mainMixer.outputVolume = defaults.object(forKey: "volume") as? Float ?? 0.5
         engine.attach(player)
         engine.connect(player, to: mainMixer, format: audioFormat)
-        print(engine.outputNode)
-        
     }
     
     
@@ -82,19 +82,16 @@ class CLAudioPlayer: AudioPlayer {
     
     
     func playPause() {
-   
-        
         if player.isPlaying {
             engine.pause()
             player.pause()
-            print("pause")
         } else {
             do {
+                engine.prepare()
                 try engine.start()
             } catch {
                 print("Error starting engine")
             }
-            print("play")
             player.play()
         }
     }
@@ -105,46 +102,18 @@ class CLAudioPlayer: AudioPlayer {
         defaults.setValue(level, forKey: "volume")
     }
     
-    func configureAudioSession() {
-        do{
-            if #available(iOS 10.0, *) {
-                try AVAudioSession.sharedInstance().setCategory(.playAndRecord,
-                                                                mode: .default, options: [.mixWithOthers, .allowAirPlay,
-                .allowBluetoothA2DP,.defaultToSpeaker])
-                print("ios 10 and above")
-
-            } else {
-                 print("ios 10 and lower")
-                let options: [AVAudioSession.CategoryOptions] =
-                [.mixWithOthers, .allowBluetooth]
-                let category = AVAudioSession.Category.playAndRecord
-                let selector =
-                NSSelectorFromString("setCategory:withOptions:error:")
-                AVAudioSession.sharedInstance().perform(selector, with:
-                 category, with: options)
-            }
-
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-        } catch {
-            print("There were errors")
-        }
-    }
     
-    func observer() {
+    private func observer() {
         let notificationCenter = NotificationCenter.default
         
-        audioSessionObserver = notificationCenter.addObserver(forName: AVAudioSession.routeChangeNotification,
-                                                              object: nil,
-                                                              queue: nil) { [unowned self] _ in
-            if player.isPlaying {
+        audioSessionObserver = notificationCenter.addObserver(forName: AVAudioSession.routeChangeNotification, object: nil, queue: nil) { [weak self] _ in
+            guard let self = self else { return }
+            
+            if self.player.isPlaying {
                 self.playPause()
             } else {
-                engine.pause()
+                self.engine.pause()
             }
         }
-        
-        // Configure the audio session initially.
-    
     }
 }

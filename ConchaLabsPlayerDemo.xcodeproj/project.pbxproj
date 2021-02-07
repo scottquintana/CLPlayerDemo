@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		57FD544DE29C62894A467B09 /* Pods_ConchaLabsPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */; };
+		5E330F4325D08AAC009A4979 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E330F4225D08AAC009A4979 /* GradientView.swift */; };
+		5E330F5325D0918A009A4979 /* conchalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E330F5225D0918A009A4979 /* conchalogo.png */; };
 		5E5305F925CF409600AD4C88 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5305F725CF409600AD4C88 /* Merriweather-Regular.ttf */; };
 		5E5305FA25CF409600AD4C88 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */; };
 		5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1025CDDDC30031121B /* AppDelegate.swift */; };
@@ -25,7 +27,6 @@
 		5E758E8C25CE04880031121B /* CLAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E8B25CE04880031121B /* CLAudioPlayer.swift */; };
 		5E758E9425CE07490031121B /* casioloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E9325CE07490031121B /* casioloop.wav */; };
 		5E758E9E25CE769F0031121B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E9D25CE769E0031121B /* LoginViewController.swift */; };
-		5E758EA325CE78270031121B /* CLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EA225CE78270031121B /* CLTextField.swift */; };
 		5E758EAC25CE79380031121B /* CLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758EAB25CE79380031121B /* CLButton.swift */; };
 		5E758EB625CE7E220031121B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E758EB525CE7E220031121B /* GoogleService-Info.plist */; };
 		5EA4F4B425CF44E4004F8038 /* CLTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4B325CF44E4004F8038 /* CLTitleLabel.swift */; };
@@ -54,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		2A93C51A36301A3F303A49CA /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E330F4225D08AAC009A4979 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		5E330F5225D0918A009A4979 /* conchalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conchalogo.png; sourceTree = "<group>"; };
 		5E5305F725CF409600AD4C88 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
 		5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConchaLabsPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +80,6 @@
 		5E758E8B25CE04880031121B /* CLAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAudioPlayer.swift; sourceTree = "<group>"; };
 		5E758E9325CE07490031121B /* casioloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = casioloop.wav; sourceTree = "<group>"; };
 		5E758E9D25CE769E0031121B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5E758EA225CE78270031121B /* CLTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTextField.swift; sourceTree = "<group>"; };
 		5E758EAB25CE79380031121B /* CLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLButton.swift; sourceTree = "<group>"; };
 		5E758EB525CE7E220031121B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5EA4F4B325CF44E4004F8038 /* CLTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTitleLabel.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E330F5725D0938C009A4979 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5E330F5225D0918A009A4979 /* conchalogo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		5E5305F625CF407B00AD4C88 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,17 +188,16 @@
 		5E758E0F25CDDDC30031121B /* ConchaLabsPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E330F5725D0938C009A4979 /* Images */,
 				5EA4F4C025CF4FF1004F8038 /* Extensions */,
 				5E5305F625CF407B00AD4C88 /* Fonts */,
-				5E758EB525CE7E220031121B /* GoogleService-Info.plist */,
 				5E758E9825CE07500031121B /* Sounds */,
 				5E758E6125CDE3270031121B /* Utilities */,
 				5E758E5525CDE2E50031121B /* Views */,
 				5E758E5425CDE2D30031121B /* Controllers */,
-				5E758E1025CDDDC30031121B /* AppDelegate.swift */,
-				5E758E1225CDDDC30031121B /* SceneDelegate.swift */,
 				5E758E1925CDDDC80031121B /* Assets.xcassets */,
 				5E758E1B25CDDDC80031121B /* LaunchScreen.storyboard */,
+				5E758EB525CE7E220031121B /* GoogleService-Info.plist */,
 				5E758E1E25CDDDC80031121B /* Info.plist */,
 			);
 			path = ConchaLabsPlayerDemo;
@@ -225,11 +234,11 @@
 			isa = PBXGroup;
 			children = (
 				5EA4F4B225CF44CA004F8038 /* Labels */,
-				5E758EA725CE782E0031121B /* TextFields */,
 				5E758E8225CDF6040031121B /* Buttons */,
 				5E758E7725CDED430031121B /* Sliders */,
 				5E758E7225CDE6CF0031121B /* PlayerView.swift */,
 				5E758E7D25CDEF940031121B /* VolumeControlView.swift */,
+				5E330F4225D08AAC009A4979 /* GradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +246,8 @@
 		5E758E6125CDE3270031121B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5E758E1025CDDDC30031121B /* AppDelegate.swift */,
+				5E758E1225CDDDC30031121B /* SceneDelegate.swift */,
 				5E758E6225CDE3360031121B /* Constants.swift */,
 				5E758E8B25CE04880031121B /* CLAudioPlayer.swift */,
 			);
@@ -266,14 +277,6 @@
 				5E758E9325CE07490031121B /* casioloop.wav */,
 			);
 			path = Sounds;
-			sourceTree = "<group>";
-		};
-		5E758EA725CE782E0031121B /* TextFields */ = {
-			isa = PBXGroup;
-			children = (
-				5E758EA225CE78270031121B /* CLTextField.swift */,
-			);
-			path = TextFields;
 			sourceTree = "<group>";
 		};
 		5EA4F4B225CF44CA004F8038 /* Labels */ = {
@@ -405,6 +408,7 @@
 			files = (
 				5E758E1D25CDDDC80031121B /* LaunchScreen.storyboard in Resources */,
 				5E5305FA25CF409600AD4C88 /* NunitoSans-Regular.ttf in Resources */,
+				5E330F5325D0918A009A4979 /* conchalogo.png in Resources */,
 				5E758EB625CE7E220031121B /* GoogleService-Info.plist in Resources */,
 				5E758E9425CE07490031121B /* casioloop.wav in Resources */,
 				5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */,
@@ -570,9 +574,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E758EA325CE78270031121B /* CLTextField.swift in Sources */,
 				5E758E7925CDED5A0031121B /* CLSlider.swift in Sources */,
 				5EA4F4C225CF5000004F8038 /* UIView+Ext.swift in Sources */,
+				5E330F4325D08AAC009A4979 /* GradientView.swift in Sources */,
 				5EA4F4B425CF44E4004F8038 /* CLTitleLabel.swift in Sources */,
 				5E758E6325CDE3360031121B /* Constants.swift in Sources */,
 				5E758EAC25CE79380031121B /* CLButton.swift in Sources */,

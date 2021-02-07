@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 protocol VolumeControlViewDelegate: class {
     func didChangeVolume(to volume: Float)
@@ -13,8 +14,7 @@ protocol VolumeControlViewDelegate: class {
 
 class VolumeControlView: UIView {
 
-    let lowSpeakerImage = UIImageView(image: SFSymbols.speakerLow)
-    let highSpeakerImage = UIImageView(image: SFSymbols.speakerHigh)
+    let speakerImage = UIImageView()
     let volumeSlider = CLSlider()
     
     weak var delegate: VolumeControlViewDelegate?
@@ -25,38 +25,42 @@ class VolumeControlView: UIView {
         layoutUI()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     private func layoutUI() {
         backgroundColor = .white
         
-        addSubviews(lowSpeakerImage, highSpeakerImage, volumeSlider)
+        let routePickerView = AVRoutePickerView()
+        routePickerView.translatesAutoresizingMaskIntoConstraints = false
+        addSubviews(speakerImage, routePickerView, volumeSlider)
         
-        lowSpeakerImage.translatesAutoresizingMaskIntoConstraints = false
-        highSpeakerImage.translatesAutoresizingMaskIntoConstraints = false
+        speakerImage.translatesAutoresizingMaskIntoConstraints = false
         
-        lowSpeakerImage.tintColor = Colors.darkGrey
-        highSpeakerImage.tintColor = Colors.darkGrey
-        
+        speakerImage.contentMode = .left
+        speakerImage.tintColor = Colors.darkGrey
+        routePickerView.tintColor = Colors.darkGrey
+        setSpeakerImage(volumeSlider.value)
         volumeSlider.addTarget(self, action: #selector(sliderChanged), for: .valueChanged)
         
         let padding: CGFloat = 10
         
         NSLayoutConstraint.activate([
-            lowSpeakerImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
-            lowSpeakerImage.widthAnchor.constraint(equalToConstant: 30),
-            lowSpeakerImage.heightAnchor.constraint(equalToConstant: 30),
-            lowSpeakerImage.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            speakerImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            speakerImage.widthAnchor.constraint(equalToConstant: 25),
+            speakerImage.heightAnchor.constraint(equalToConstant: 30),
+            speakerImage.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             
-            highSpeakerImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
-            highSpeakerImage.widthAnchor.constraint(equalToConstant: 40),
-            highSpeakerImage.heightAnchor.constraint(equalToConstant: 30),
-            highSpeakerImage.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            routePickerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
+            routePickerView.widthAnchor.constraint(equalToConstant: 30),
+            routePickerView.heightAnchor.constraint(equalToConstant: 30),
+            routePickerView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             
-            volumeSlider.leadingAnchor.constraint(equalTo: lowSpeakerImage.trailingAnchor, constant: padding),
-            volumeSlider.trailingAnchor.constraint(equalTo: highSpeakerImage.leadingAnchor, constant: -padding),
+            volumeSlider.leadingAnchor.constraint(equalTo: speakerImage.trailingAnchor, constant: padding),
+            volumeSlider.trailingAnchor.constraint(equalTo: routePickerView.leadingAnchor, constant: -padding),
             volumeSlider.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             volumeSlider.heightAnchor.constraint(equalToConstant: 50)   
         ])
@@ -65,5 +69,21 @@ class VolumeControlView: UIView {
     
     @objc private func sliderChanged() {
         delegate?.didChangeVolume(to: volumeSlider.value)
+        setSpeakerImage(volumeSlider.value)
+    }
+    
+    func setSpeakerImage(_ volume: Float) {
+        switch volume {
+        case 0.0:
+            speakerImage.image = SFSymbols.speakerOff
+        case 0.01..<0.33:
+            speakerImage.image = SFSymbols.speakerLow
+        case 0.33..<0.66:
+            speakerImage.image = SFSymbols.speakerMed
+        case 0.66...1.0:
+            speakerImage.image = SFSymbols.speakerHigh
+        default:
+            speakerImage.image = SFSymbols.speakerMed
+        }
     }
 }
