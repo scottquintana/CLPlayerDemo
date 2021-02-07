@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let rootViewController = LoginViewController()
+        let rootViewController = PlayerViewController(audioPlayer: CLAudioPlayer(), user: "Scott") //LoginViewController()
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         let attributes = [

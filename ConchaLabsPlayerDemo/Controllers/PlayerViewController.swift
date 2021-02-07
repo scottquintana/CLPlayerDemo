@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import AVKit
 
 class PlayerViewController: UIViewController {
     var greetingLabel: CLTitleLabel!
@@ -39,8 +40,12 @@ class PlayerViewController: UIViewController {
         view.addSubview(greetingLabel)
         view.addSubview(playerView)
         view.addSubview(bluetoothButton)
-        playerView.translatesAutoresizingMaskIntoConstraints = false
         
+        let routePickerView = AVRoutePickerView()
+        routePickerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(routePickerView)
+        playerView.translatesAutoresizingMaskIntoConstraints = false
+        bluetoothButton.addTarget(self, action: #selector(connectMenu), for: .touchUpInside)
         let padding: CGFloat = 4
         
         NSLayoutConstraint.activate([
@@ -57,7 +62,9 @@ class PlayerViewController: UIViewController {
             bluetoothButton.topAnchor.constraint(equalTo: playerView.bottomAnchor, constant: 20),
             bluetoothButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             bluetoothButton.widthAnchor.constraint(equalToConstant: 170),
-            bluetoothButton.heightAnchor.constraint(equalToConstant: 34)
+            bluetoothButton.heightAnchor.constraint(equalToConstant: 34),
+            
+            routePickerView.topAnchor.constraint(equalTo: bluetoothButton.bottomAnchor, constant: padding)
         ])
     }
     
@@ -65,22 +72,26 @@ class PlayerViewController: UIViewController {
         audioPlayer.playPause()
     }
     
-//    @objc func connectMenu() {
-//        let session = AVAudioSession.p
-//
-//    }
-//
-//    private func bringupAudioDeviceSheet(availableAudioPorts:[AVAudioSessionPortDescription]) {
+    @objc func connectMenu() {
+//        if let session = AVAudioSession.sharedInstance().outputDataSources {
+//        bringupAudioDeviceSheet(availableAudioPorts: session)
+//        } else {
+//            print("No output source")
+//        }
+        popupMenu()
+    }
+
+//    private func bringupAudioDeviceSheet(availableAudioPorts:[AVAudioSessionDataSourceDescription]) {
 //            let alertController = UIAlertController(title: nil,
 //                                                    message: nil,
 //                                                    preferredStyle: .actionSheet)
 //            for audioPort in availableAudioPorts {
-//                let action = UIAlertAction(title: audioPort.portName, style: .default) { (action) in
-//                    try? AVAudioSession.sharedInstance().setPreferredInput(audioPort)
+//                let action = UIAlertAction(title: audioPort.dataSourceName, style: .default) { (action) in
+//                    try? AVAudioSession.sharedInstance().setOutputDataSource(audioPort)
 //                }
-//
+
 //                var imageName: String?  = nil;
-//                switch audioPort.portType {
+//                switch audioPort.dataSourceName {
 //                case AVAudioSession.Port.builtInMic:
 //                    imageName = "ic_36dp_phone"
 //                case AVAudioSession.Port.builtInSpeaker:
@@ -115,7 +126,35 @@ class PlayerViewController: UIViewController {
 //                alertController.dismiss(animated: true, completion: nil)
 //            }
 //        }
+    func popupMenu() {
+     let model = UIDevice().localizedModel
+            
+        let session = AVAudioSession.sharedInstance()
+            
+    let alertController = UIAlertController(title: "Select Output", message: "", preferredStyle: UIAlertController.Style.actionSheet)
+        
+        alertController.addAction(UIAlertAction(title: model, style: UIAlertAction.Style.default, handler: { action in
+        do {
+            try session.setCategory(AVAudioSession.Category.playAndRecord, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
+        } catch {
+            print("AVAudioSession error!")
+        }
+        }))
+        alertController.addAction(UIAlertAction(title: "Bluetooth", style: UIAlertAction.Style.default, handler: { action in
+        do {
+            try session.setCategory(AVAudioSession.Category.playAndRecord, options: AVAudioSession.CategoryOptions.allowBluetoothA2DP)
+            try session.overrideOutputAudioPort(AVAudioSession.PortOverride.none)
+        } catch {
+            print("AVAudioSession error!")
+        }
+        }))
+        present(alertController, animated: true, completion: nil)
+    }
+    
 }
+    
+    
+
 
 extension PlayerViewController: PlayerViewDelegate {
     func togglePlayPause() {
