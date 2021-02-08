@@ -16,6 +16,7 @@
 		5E5305FA25CF409600AD4C88 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */; };
 		5E6F60ED25D0E3F200320668 /* MockPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F60EC25D0E3F200320668 /* MockPlayer.swift */; };
 		5E6F60F525D0E59800320668 /* PlayerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F60F425D0E59800320668 /* PlayerViewControllerTests.swift */; };
+		5E6F610625D10BD100320668 /* clheader.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F610525D10BD100320668 /* clheader.png */; };
 		5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1025CDDDC30031121B /* AppDelegate.swift */; };
 		5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1225CDDDC30031121B /* SceneDelegate.swift */; };
 		5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E1925CDDDC80031121B /* Assets.xcassets */; };
@@ -34,7 +35,7 @@
 		5E758EB625CE7E220031121B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E758EB525CE7E220031121B /* GoogleService-Info.plist */; };
 		5EA4F4B425CF44E4004F8038 /* CLTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4B325CF44E4004F8038 /* CLTitleLabel.swift */; };
 		5EA4F4BC25CF4967004F8038 /* CLBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4BB25CF4967004F8038 /* CLBodyLabel.swift */; };
-		5EA4F4C225CF5000004F8038 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4C125CF5000004F8038 /* UIView+Ext.swift */; };
+		5EA4F4C225CF5000004F8038 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4F4C125CF5000004F8038 /* UIView+addSubviews.swift */; };
 		8F610E898684586DA198512B /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC04E54939BC5568D7E8DB /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework */; };
 		917A0D49B821ADCC924803B9 /* Pods_ConchaLabsPlayerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68475F507E56A8E6E6FCD96 /* Pods_ConchaLabsPlayerDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		5E6F60EC25D0E3F200320668 /* MockPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayer.swift; sourceTree = "<group>"; };
 		5E6F60F425D0E59800320668 /* PlayerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewControllerTests.swift; sourceTree = "<group>"; };
+		5E6F610525D10BD100320668 /* clheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clheader.png; sourceTree = "<group>"; };
 		5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConchaLabsPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E758E1025CDDDC30031121B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E758E1225CDDDC30031121B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +92,7 @@
 		5E758EB525CE7E220031121B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5EA4F4B325CF44E4004F8038 /* CLTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTitleLabel.swift; sourceTree = "<group>"; };
 		5EA4F4BB25CF4967004F8038 /* CLBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLBodyLabel.swift; sourceTree = "<group>"; };
-		5EA4F4C125CF5000004F8038 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		5EA4F4C125CF5000004F8038 /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConchaLabsPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF81D4E47519EA08B838333 /* Pods-ConchaLabsPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemoTests/Pods-ConchaLabsPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9BC04E54939BC5568D7E8DB /* Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConchaLabsPlayerDemo_ConchaLabsPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 		5E330F5725D0938C009A4979 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5E6F610525D10BD100320668 /* clheader.png */,
 				5E330F5225D0918A009A4979 /* conchalogo.png */,
 			);
 			path = Images;
@@ -316,7 +319,7 @@
 		5EA4F4C025CF4FF1004F8038 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5EA4F4C125CF5000004F8038 /* UIView+Ext.swift */,
+				5EA4F4C125CF5000004F8038 /* UIView+addSubviews.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				5E758E9425CE07490031121B /* casioloop.wav in Resources */,
 				5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */,
 				5E5305F925CF409600AD4C88 /* Merriweather-Regular.ttf in Resources */,
+				5E6F610625D10BD100320668 /* clheader.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E758E7925CDED5A0031121B /* CLSlider.swift in Sources */,
-				5EA4F4C225CF5000004F8038 /* UIView+Ext.swift in Sources */,
+				5EA4F4C225CF5000004F8038 /* UIView+addSubviews.swift in Sources */,
 				5E330F4325D08AAC009A4979 /* GradientView.swift in Sources */,
 				5EA4F4B425CF44E4004F8038 /* CLTitleLabel.swift in Sources */,
 				5E758E6325CDE3360031121B /* Constants.swift in Sources */,

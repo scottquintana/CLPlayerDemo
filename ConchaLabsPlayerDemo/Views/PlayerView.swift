@@ -37,7 +37,7 @@ class PlayerView: UIView {
         
         playPauseButton.addTarget(self, action: #selector(playPauseTapped), for: .touchUpInside)
         
-        let volume = defaults.object(forKey: "volume") as? Float ?? 0.5
+        let volume = defaults.object(forKey: "volume") as? Float ?? 1.0
         
         volumeControlView.volumeSlider.value = volume
         volumeControlView.setSpeakerImage(volume)
