@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>330868782546-mnof17do098187kri0bb35oqgr2otla7.apps.googleusercontent.com</string>
+	<string></string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.330868782546-mnof17do098187kri0bb35oqgr2otla7</string>
+	<string></string>
 	<key>API_KEY</key>
 	<string>AIzaSyDe1NerMW-FGflgSwRuKIgirH24vFVVJ4k</string>
 	<key>GCM_SENDER_ID</key>
@@ -19,15 +19,15 @@
 	<key>STORAGE_BUCKET</key>
 	<string>conchalabsdemo.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:330868782546:ios:776295e6deba9ffa01440b</string>
 </dict>

@@ -16,6 +16,7 @@ class MockAudioPlayer: AudioPlayer {
     var pauseFunctionCalled: Bool = false
     var setVolumeCalled: Bool = false
     
+    
     func simulatePlay() {
         delegate?.playerStateDidChange(newStatus: .playing)
     }

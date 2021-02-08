@@ -8,8 +8,6 @@
 import Foundation
 import AVFoundation
 
-
-
 class CLAudioPlayer: AudioPlayer {
     
     let defaults = UserDefaults.standard
@@ -18,9 +16,8 @@ class CLAudioPlayer: AudioPlayer {
     private var engine = AVAudioEngine()
     private var mainMixer: AVAudioMixerNode!
     private var player = AVAudioPlayerNode()
+    
     private var audioFormat: AVAudioFormat!
-    
-    
     private var audioFrameCount: UInt32!
     private var audioFileBuffer: AVAudioPCMBuffer!
     
@@ -37,7 +34,6 @@ class CLAudioPlayer: AudioPlayer {
             }
         }
     }
-    
     
     private var audioFileURL: URL? {
         didSet {
@@ -69,12 +65,13 @@ class CLAudioPlayer: AudioPlayer {
     }
     
     
-    private func scheduleAudioFile(){
+    private func scheduleAudioFile() {
         guard let audioFile = audioFile else { return }
         
         player.scheduleFile(audioFile, at: nil)
         player.scheduleBuffer(audioFileBuffer, at: nil, options: .loops, completionHandler: nil)
     }
+    
     
     func play() {
         status = .playing
@@ -112,7 +109,6 @@ class CLAudioPlayer: AudioPlayer {
             if self.status == .playing {
                 self.pause()
             }
-            
         }
     }
 }

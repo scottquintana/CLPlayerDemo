@@ -19,7 +19,7 @@ class PlayerViewControllerTests: XCTestCase {
         vc.audioPlayer = mockAudioPlayer
         mockAudioPlayer.delegate = vc
         
-//        let _ = vc.view
+        let _ = vc.view
     }
 
    
@@ -37,5 +37,4 @@ class PlayerViewControllerTests: XCTestCase {
         mockAudioPlayer.simulatePause()
         XCTAssertFalse(vc.playerView.playPauseButton.isSelected)
     }
-
 }
