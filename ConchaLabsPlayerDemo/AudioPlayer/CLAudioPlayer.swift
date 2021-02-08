@@ -8,11 +8,7 @@
 import Foundation
 import AVFoundation
 
-protocol AudioPlayer {
-    var isPlaying: Bool { get }
-    func playPause()
-    func setVolume(_ level: Float)
-}
+
 
 class CLAudioPlayer: AudioPlayer {
     
@@ -28,9 +24,9 @@ class CLAudioPlayer: AudioPlayer {
     private var audioFrameCount: UInt32!
     private var audioFileBuffer: AVAudioPCMBuffer!
     
-    var isPlaying: Bool {
-        return player.isPlaying
-    }
+    weak var delegate: AudioPlayerDelegate?
+    
+    var status: PlayerStatus = .paused
     
     private var audioFile: AVAudioFile? {
         didSet {
@@ -80,20 +76,24 @@ class CLAudioPlayer: AudioPlayer {
         player.scheduleBuffer(audioFileBuffer, at: nil, options: .loops, completionHandler: nil)
     }
     
-    
-    func playPause() {
-        if player.isPlaying {
-            engine.pause()
-            player.pause()
-        } else {
-            do {
-                engine.prepare()
-                try engine.start()
-            } catch {
-                print("Error starting engine")
-            }
-            player.play()
+    func play() {
+        status = .playing
+        do {
+            engine.prepare()
+            try engine.start()
+        } catch {
+            print("Error starting engine")
         }
+        player.play()
+        delegate?.playerStateDidChange(newStatus: status)
+    }
+    
+    
+    func pause() {
+        status = .paused
+        engine.pause()
+        player.pause()
+        delegate?.playerStateDidChange(newStatus: status)
     }
     
     
@@ -109,11 +109,10 @@ class CLAudioPlayer: AudioPlayer {
         audioSessionObserver = notificationCenter.addObserver(forName: AVAudioSession.routeChangeNotification, object: nil, queue: nil) { [weak self] _ in
             guard let self = self else { return }
             
-            if self.player.isPlaying {
-                self.playPause()
-            } else {
-                self.engine.pause()
+            if self.status == .playing {
+                self.pause()
             }
+            
         }
     }
 }

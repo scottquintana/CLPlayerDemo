@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 
 class PlayerViewController: UIViewController {
-    var audioSessionObserver: Any!
+   
     var greetingLabel: CLTitleLabel!
     let playerView = PlayerView()
     var audioPlayer: AudioPlayer!
@@ -24,10 +24,10 @@ class PlayerViewController: UIViewController {
         greetingLabel = CLTitleLabel(textAlignment: .center, fontSize: 32, fontColor: Colors.lightGrey)
         greetingLabel.text = "Hello, \(user)!"
         playerView.delegate = self
+        audioPlayer.delegate = self
         
         configureNavbar()
         configurePlayer()
-        observer()
     }
     
     
@@ -73,35 +73,36 @@ class PlayerViewController: UIViewController {
     }
     
     
-    func startAudio() {
-        audioPlayer.playPause()
-    }
-    
-    
     @objc func presentBTSettings() {
         UIApplication.shared.open(URL(string: "App-prefs:Bluetooth")!)
     }
-    
-    
-    func observer() {
-        let notificationCenter = NotificationCenter.default
-        
-        audioSessionObserver = notificationCenter.addObserver(forName: AVAudioSession.routeChangeNotification, object: nil, queue: nil) { [weak self] _ in
-            guard let self = self else { return }
-            
-            self.playerView.playPauseButton.isSelected = false
-        }
-    }
 }
 
+// MARK: - PlayerViewDelegate
 
 extension PlayerViewController: PlayerViewDelegate {
     func togglePlayPause() {
-        audioPlayer.playPause()
+        if audioPlayer.status == .playing {
+            audioPlayer.pause()
+        } else {
+            audioPlayer.play()
+        }
     }
     
     
     func volumeDidChange(to volume: Float) {
         audioPlayer.setVolume(volume)
+    }
+}
+
+// MARK: - AudioPlayerDelegate
+
+extension PlayerViewController: AudioPlayerDelegate {
+    func playerStateDidChange(newStatus: PlayerStatus) {
+        if newStatus == .playing {
+            playerView.playPauseButton.isSelected = true
+        } else {
+            playerView.playPauseButton.isSelected = false
+        }
     }
 }
