@@ -32,7 +32,7 @@ class PlayerViewControllerTests: XCTestCase {
         XCTAssertTrue(vc.playerView.playPauseButton.isSelected)
     }
     
-    func testWhenPlayerStopsPlaying_changesButtonTextToPlay() throws {
+    func testWhenPlayerStopsPlaying_changesButtonImageToPlay() throws {
         mockAudioPlayer.simulatePlay()
         mockAudioPlayer.simulatePause()
         XCTAssertFalse(vc.playerView.playPauseButton.isSelected)
