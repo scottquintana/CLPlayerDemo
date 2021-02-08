@@ -67,12 +67,14 @@ class VolumeControlView: UIView {
     }
     
     
-    @objc private func sliderChanged() {
+    @objc func sliderChanged() {
         delegate?.didChangeVolume(to: volumeSlider.value)
         setSpeakerImage(volumeSlider.value)
     }
     
+    
     func setSpeakerImage(_ volume: Float) {
+        
         switch volume {
         case 0.0:
             speakerImage.image = SFSymbols.speakerOff

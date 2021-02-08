@@ -14,7 +14,7 @@ class MockAudioPlayer: AudioPlayer {
     
     var playFunctionCalled: Bool = false
     var pauseFunctionCalled: Bool = false
-    var setVolumeCalled: Bool = false
+    var volume: Float = 0.0
     
     
     func simulatePlay() {
@@ -26,14 +26,14 @@ class MockAudioPlayer: AudioPlayer {
     }
     
     func play() {
-        playFunctionCalled = true
+        self.playFunctionCalled = true
     }
     
     func pause() {
-        pauseFunctionCalled = true
+        self.pauseFunctionCalled = true
     }
     
     func setVolume(_ level: Float) {
-        setVolumeCalled = true
+        self.volume = level
     }
 }

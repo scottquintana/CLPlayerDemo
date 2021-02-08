@@ -99,10 +99,12 @@ extension PlayerViewController: PlayerViewDelegate {
 
 extension PlayerViewController: AudioPlayerDelegate {
     func playerStateDidChange(newStatus: PlayerStatus) {
-        if newStatus == .playing {
-            playerView.playPauseButton.isSelected = true
-        } else {
-            playerView.playPauseButton.isSelected = false
+        ensureMainQueue {
+            if newStatus == .playing {
+                self.playerView.playPauseButton.isSelected = true
+            } else {
+                self.playerView.playPauseButton.isSelected = false
+            }
         }
     }
 }

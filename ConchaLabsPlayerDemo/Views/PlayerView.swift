@@ -60,7 +60,7 @@ class PlayerView: UIView {
     }
     
     
-    @objc private func playPauseTapped() {
+    @objc func playPauseTapped() {
         delegate?.togglePlayPause()
     }
 }
