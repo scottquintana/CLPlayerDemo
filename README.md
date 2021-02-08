@@ -4,6 +4,6 @@ An app to listen to a Casio drum loop on repeat for as long as you'd like.
 ##
 1. Clone repo.
 
-(https://developers.google.com/identity/sign-in/ios/images/xcode_infotab_url_type_values.png)
+![Reverse_URL](https://developers.google.com/identity/sign-in/ios/images/xcode_infotab_url_type_values.png)
 2. Dependencies are managed with CocoaPods. The Pods folder is checked into the repo so no `pod install` is necessary.
 3. Run and enjoy!
