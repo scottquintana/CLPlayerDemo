@@ -62,7 +62,6 @@ class PlayerView: UIView {
     
     @objc private func playPauseTapped() {
         delegate?.togglePlayPause()
-        playPauseButton.isSelected.toggle()
     }
 }
 

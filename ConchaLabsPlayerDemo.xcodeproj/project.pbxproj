@@ -10,13 +10,16 @@
 		57FD544DE29C62894A467B09 /* Pods_ConchaLabsPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751ECFCC6E4B680BC6B6AFF0 /* Pods_ConchaLabsPlayerDemo.framework */; };
 		5E330F4325D08AAC009A4979 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E330F4225D08AAC009A4979 /* GradientView.swift */; };
 		5E330F5325D0918A009A4979 /* conchalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E330F5225D0918A009A4979 /* conchalogo.png */; };
+		5E330F6325D0D874009A4979 /* AudioPlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E330F6225D0D874009A4979 /* AudioPlayerProtocol.swift */; };
+		5E330F6825D0D8CD009A4979 /* AudioPlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E330F6725D0D8CD009A4979 /* AudioPlayerDelegate.swift */; };
 		5E5305F925CF409600AD4C88 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5305F725CF409600AD4C88 /* Merriweather-Regular.ttf */; };
 		5E5305FA25CF409600AD4C88 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */; };
+		5E6F60ED25D0E3F200320668 /* MockPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F60EC25D0E3F200320668 /* MockPlayer.swift */; };
+		5E6F60F525D0E59800320668 /* PlayerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F60F425D0E59800320668 /* PlayerViewControllerTests.swift */; };
 		5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1025CDDDC30031121B /* AppDelegate.swift */; };
 		5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E1225CDDDC30031121B /* SceneDelegate.swift */; };
 		5E758E1A25CDDDC80031121B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E1925CDDDC80031121B /* Assets.xcassets */; };
 		5E758E1D25CDDDC80031121B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E758E1B25CDDDC80031121B /* LaunchScreen.storyboard */; };
-		5E758E2825CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E2725CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift */; };
 		5E758E3325CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E3225CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift */; };
 		5E758E5025CDE2BF0031121B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E4F25CDE2BF0031121B /* PlayerViewController.swift */; };
 		5E758E6325CDE3360031121B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E758E6225CDE3360031121B /* Constants.swift */; };
@@ -57,8 +60,12 @@
 		2A93C51A36301A3F303A49CA /* Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests/Pods-ConchaLabsPlayerDemo-ConchaLabsPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E330F4225D08AAC009A4979 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5E330F5225D0918A009A4979 /* conchalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conchalogo.png; sourceTree = "<group>"; };
+		5E330F6225D0D874009A4979 /* AudioPlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerProtocol.swift; sourceTree = "<group>"; };
+		5E330F6725D0D8CD009A4979 /* AudioPlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerDelegate.swift; sourceTree = "<group>"; };
 		5E5305F725CF409600AD4C88 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
 		5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		5E6F60EC25D0E3F200320668 /* MockPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayer.swift; sourceTree = "<group>"; };
+		5E6F60F425D0E59800320668 /* PlayerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewControllerTests.swift; sourceTree = "<group>"; };
 		5E758E0D25CDDDC30031121B /* ConchaLabsPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConchaLabsPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E758E1025CDDDC30031121B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E758E1225CDDDC30031121B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +73,6 @@
 		5E758E1C25CDDDC80031121B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E758E1E25CDDDC80031121B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E758E2325CDDDC80031121B /* ConchaLabsPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConchaLabsPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E758E2725CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConchaLabsPlayerDemoTests.swift; sourceTree = "<group>"; };
 		5E758E2925CDDDC80031121B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E758E2E25CDDDC90031121B /* ConchaLabsPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConchaLabsPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E758E3225CDDDC90031121B /* ConchaLabsPlayerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConchaLabsPlayerDemoUITests.swift; sourceTree = "<group>"; };
@@ -154,6 +160,16 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		5E330F6125D0D85B009A4979 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5E758E8B25CE04880031121B /* CLAudioPlayer.swift */,
+				5E330F6225D0D874009A4979 /* AudioPlayerProtocol.swift */,
+				5E330F6725D0D8CD009A4979 /* AudioPlayerDelegate.swift */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
 		5E5305F625CF407B00AD4C88 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +177,14 @@
 				5E5305F825CF409600AD4C88 /* NunitoSans-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5E6F60EB25D0E3B300320668 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F60EC25D0E3F200320668 /* MockPlayer.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		5E758E0425CDDDC30031121B = {
@@ -188,6 +212,7 @@
 		5E758E0F25CDDDC30031121B /* ConchaLabsPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E330F6125D0D85B009A4979 /* AudioPlayer */,
 				5E330F5725D0938C009A4979 /* Images */,
 				5EA4F4C025CF4FF1004F8038 /* Extensions */,
 				5E5305F625CF407B00AD4C88 /* Fonts */,
@@ -206,8 +231,9 @@
 		5E758E2625CDDDC80031121B /* ConchaLabsPlayerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E758E2725CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift */,
+				5E6F60EB25D0E3B300320668 /* Mocks */,
 				5E758E2925CDDDC80031121B /* Info.plist */,
+				5E6F60F425D0E59800320668 /* PlayerViewControllerTests.swift */,
 			);
 			path = ConchaLabsPlayerDemoTests;
 			sourceTree = "<group>";
@@ -249,7 +275,6 @@
 				5E758E1025CDDDC30031121B /* AppDelegate.swift */,
 				5E758E1225CDDDC30031121B /* SceneDelegate.swift */,
 				5E758E6225CDE3360031121B /* Constants.swift */,
-				5E758E8B25CE04880031121B /* CLAudioPlayer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -579,12 +604,14 @@
 				5E330F4325D08AAC009A4979 /* GradientView.swift in Sources */,
 				5EA4F4B425CF44E4004F8038 /* CLTitleLabel.swift in Sources */,
 				5E758E6325CDE3360031121B /* Constants.swift in Sources */,
+				5E330F6325D0D874009A4979 /* AudioPlayerProtocol.swift in Sources */,
 				5E758EAC25CE79380031121B /* CLButton.swift in Sources */,
 				5E758E5025CDE2BF0031121B /* PlayerViewController.swift in Sources */,
 				5E758E8425CDF62B0031121B /* CLPlayPauseButton.swift in Sources */,
 				5E758E7325CDE6CF0031121B /* PlayerView.swift in Sources */,
 				5E758E1125CDDDC30031121B /* AppDelegate.swift in Sources */,
 				5E758E8C25CE04880031121B /* CLAudioPlayer.swift in Sources */,
+				5E330F6825D0D8CD009A4979 /* AudioPlayerDelegate.swift in Sources */,
 				5E758E7E25CDEF940031121B /* VolumeControlView.swift in Sources */,
 				5E758E1325CDDDC30031121B /* SceneDelegate.swift in Sources */,
 				5E758E9E25CE769F0031121B /* LoginViewController.swift in Sources */,
@@ -596,7 +623,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E758E2825CDDDC80031121B /* ConchaLabsPlayerDemoTests.swift in Sources */,
+				5E6F60ED25D0E3F200320668 /* MockPlayer.swift in Sources */,
+				5E6F60F525D0E59800320668 /* PlayerViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
